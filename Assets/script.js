@@ -1,3 +1,6 @@
+// Create variables
+    // 4 Questions
+
 // GIVEN I am taking a code quiz
     // Need to develop a start page, with instructions and a start button
     // A timer appears in the upper right hand corner of the page
@@ -23,6 +26,6 @@
 // THEN the game is over
     // a new page will appear 
         // showing your highscore and your initials
-        // 
-// THEN I can save my initials and score
+        // provide a Go Back button and Clear High Score button
+
 
