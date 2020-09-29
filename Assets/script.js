@@ -1,5 +1,6 @@
 // Create variables
-    // 4 Questions
+    // Array of questions for the game
+    // Array of answers for the game
 
 // GIVEN I am taking a code quiz
     // Need to develop a start page, with instructions and a start button
@@ -15,7 +16,7 @@
     // When a button is selected a message indicating whether it was answred as correct or incorrect.
     // Create a way to track the correct scores.
 
-// (Create a loop) THEN I am presented with     another question.
+// (Create a loop) THEN I am presented with another question.
 
 // When all of the questions are answered or when the timer reaches zero.
     // A new page will appear 
@@ -27,5 +28,20 @@
     // a new page will appear 
         // showing your highscore and your initials
         // provide a Go Back button and Clear High Score button
+//_____________________________________________
+
+// Create variables
+    // Array of questions for the quiz game
+
+var questionOne = [ 
+    
+]
+
+var questionOneAnswr = [
 
 
+]
+
+
+
+var score = 0;
