@@ -24,10 +24,10 @@ h1 {
 
 #high-score {
     float: left;
-    font-size: 10px;
+    font-size: 6px;
 }
 
 #timer {
     float: right;
-    font-size: 10px;
+    font-size: 6px;
 }
