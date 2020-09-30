@@ -105,6 +105,8 @@ function startGame() {
     }, 1000)
 
     showCurrentQuestion()
+}
+
 
     // Hide start page
 
@@ -113,46 +115,49 @@ function startGame() {
         // 'View High Score' appears in upper left hand page
         // show the current question
 
-    showCurrentQuestion() {
-        var currentQuestion = questions [currentQuestionIndex]
+function showCurrentQuestion() {
+    var currentQuestion = questions [currentQuestionIndex]
 
-        // currentQuestion.prompt as the content of your question prompt container
+    // currentQuestion.prompt as the content of your question prompt container
 
-        // for as many choices in the array currentQuestion.choices, add one button to your question choices container
+    // for as many choices in the array currentQuestion.choices, add one button to your question choices container
 
-        for (var questionChoice of currentQuestion.choices) {
-            var buttonE1 = document.createElement ("button")
+    for (var questionChoice of currentQuestion.choices) {
+        var buttonE1 = document.createElement ("button")
 
-            //Question choice text inside button
-            buttonE1.innerText = questionChoice
+        //Question choice text inside button
+        buttonE1.innerText = questionChoice
 
-            //add event listner to the button to check if this button's answer matches up to the question answer
-            buttonE1.addEventListener("click", function () {
+        //add event listner to the button to check if this button's answer matches up to the question answer
+        buttonE1.addEventListener("click", function () {
 
-                // Correct? increae score
-                // Incorrect? decrease score
+            // Correct? increase score
+            // Incorrect? decrease score
 
-                // next question
-                currentQuestionIndex++
+            // next question
+            currentQuestionIndex++
 
+            //no more questions, end the game
+            if (currentQuestionIndex >= questions.length) {
+                endGame()
+            }
+            else {
+                showCurrentQuestion()
+            }
+        })    
 
-            })    
-
-        }
-  
     }
+  
+}
 
-
-
-
-    function endGame() {
+function endGame() {
         // hide page #2
         // show page #3
         // stop the timer
-    }
-
-
 }
+
+document.getElementById("start").addEventListener("click", startGame)
+
 
 
 
