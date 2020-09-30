@@ -22,12 +22,12 @@ h1 {
     font-size: 40px;
 }
 
-#high-score {
+.high-score {
     float: left;
     font-size: 6px;
 }
 
-#timer {
+h4 {
     float: right;
     font-size: 6px;
 }
