@@ -70,7 +70,11 @@ var score = 0;
 
 var timeRemaining = 60;
 
-var timer;
+var i = 0;
+
+var mainEl = document.getElementById("time");
+var timerEl = document.getElementById("countdown");
+var bodyEl = document.createElement("div");
 
 // Three pages:
 // Start page
@@ -90,23 +94,26 @@ var timer;
 
 function startGame() {
 
+    // Decrease the timeRemaining
+    var timeLeft = 5;
+
     //The timer begins to count down.
-    timer = setInterval(function() {
+    var timeInterval = setInterval(function() {
+        timerE1.textContent = timeLeft + " seconding remaining";
+        timeLeft--;
         // Update the value inside the timer container
 
-        // Decrease the timeRemaining
-        timeRemaining
-
         // End game if there is no time left
-        if (timeRemaining <=0) {
+        if (timeLeft === 0) {
+            timerE1.textContent = "";
             endGame()
+            clearInterval(timeInterval);
         }
 
     }, 1000)
 
     showCurrentQuestion()
 }
-
 
     // Hide start page
 
