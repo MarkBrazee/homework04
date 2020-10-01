@@ -36,6 +36,7 @@
 // Create variables
     // Array of questions for the quiz game
 
+
 var currentQuestionIndex = 0
 
 var answers = [
