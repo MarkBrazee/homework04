@@ -126,9 +126,9 @@ function startGame() {
 function showCurrentQuestion() {
     var currentQuestion = questions [currentQuestionIndex]
 
-    // currentQuestion.prompt as the content of your question prompt container
+    // currentQuestion.prompt as the content of the question prompt container
 
-    // for as many choices in the array currentQuestion.choices, add one button to your question choices container
+    // for as many choices in the array currentQuestion.choices, add one button to the question choices container
 
     for (var questionChoice of currentQuestion.choices) {
         var buttonE1 = document.createElement ("button")

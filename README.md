@@ -4,7 +4,7 @@ Code Quiz Game
 
 Description of game:
 
-The following quiz is amultiple-choice game designed to challenge Bootcamp students on their knowledge of coding.
+The following quiz is a multiple-choice game designed to challenge Bootcamp students on their knowledge of coding.
 
 Instructions:
 
@@ -12,3 +12,5 @@ The quiz begins when you select the start button. A countdown timer begins. The 
 
 <p>https://markbrazee.github.io/homework04/<p>
 <p>https://github.com/MarkBrazee/homework04<p>
+
+----
